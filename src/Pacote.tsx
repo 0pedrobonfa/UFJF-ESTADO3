@@ -7,7 +7,7 @@ export default function Pacote() {
   const [peso, setPeso] = useState(200);
   const [profundidade, setProfundidade] = useState(5);
 
-  function onChange(e) {
+  function onChange(e:React.ChangeEvent<HTMLInputElement>) {
     if (e.target.name === "largura") {
       setLargura(e.target.valueAsNumber);
     } else if (e.target.name === "altura") {
