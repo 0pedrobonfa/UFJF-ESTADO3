@@ -1,12 +1,12 @@
 import { useState } from 'react'
 import './App.css'
+import Pacote from './Pacote'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <p>Olá mundo</p>
+      <Pacote></Pacote>
     </>
   )
 }
