@@ -24,9 +24,10 @@ export default function Pacote()
         }}/>}</dd>
         <dt>Peso (g)</dt>
         <dd>{<input type="number" value={peso} min="5" step={"1"} onChange={(evento)=>{
-            setPeso(evento.target.valueAsNumber)
+    
+            setPeso(Math.max(200,evento.target.valueAsNumber))
         }}/>}</dd>
         <dt>Custo</dt>
-        <dd>{(largura*0.50).toLocaleString("pt-BR", {style:"currency", currency:"BRL"})}</dd>
+        <dd>{(largura*altura*profundidade*peso*0.0005).toLocaleString("pt-BR", {style:"currency", currency:"BRL"})}</dd>
     </dl>
 }
