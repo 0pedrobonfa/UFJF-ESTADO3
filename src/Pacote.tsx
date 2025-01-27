@@ -5,7 +5,7 @@ export default function Pacote()
 {
     const [largura, setLargura] = useState(5);
     const [altura, setAltura] = useState(5);
-    const [peso, setPeso] = useState(5);
+    const [peso, setPeso] = useState(200);
     const [profundidade, setProfundidade] = useState(5);
 
 
@@ -24,7 +24,6 @@ export default function Pacote()
         }}/>}</dd>
         <dt>Peso (g)</dt>
         <dd>{<input type="number" value={peso} min="5" step={"1"} onChange={(evento)=>{
-    
             setPeso(Math.max(200,evento.target.valueAsNumber))
         }}/>}</dd>
         <dt>Custo</dt>
